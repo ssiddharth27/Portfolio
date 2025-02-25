@@ -246,7 +246,6 @@
    margin-top: auto; /* Push the button to the bottom */
  }
 
- 
  .publications {
    background: var(--second-bg-color);
  }
@@ -267,41 +266,67 @@
    box-shadow: 0 0 1rem var(--bg-color);
    border: .2rem solid var(--bg-color);
    transition: .5s ease;
-   width: 100%; /* Reduce the width of the boxes */
-   /* max-width: 800px; */
+   width: 100%;
  }
  .publications-container .publications-box:hover {
    border-color: var(--main-color);
    transform: scale(1.02);
  }
  .publications-box .publication-image {
-   width: 250px; /* Set a fixed width for the image */
+   width: 250px;
    height: auto;
    border-radius: 1rem;
-   margin-right: 2rem; /* Add space between the image and text */
+   margin-right: 2rem;
  }
  .publications-box .publication-content {
    flex: 1;
  }
  .publications-box h3 {
    font-size: 2.0rem;
-   margin-bottom: 0.5rem; /* Add space below the heading */
+   margin-bottom: 0.5rem;
  }
  .publications-box .date {
    font-size: 1.4rem;
    color: var(--main-color);
-   margin-bottom: 1rem; /* Add space below the date */
+   margin-bottom: 1rem;
  }
  .publications-box p {
    font-size: 1.6rem;
    margin: 1rem 0 3rem;
  }
  .publications-box .btn {
-   margin-top: auto; /* Push the button to the bottom */
-   padding: 0.5rem 1rem; /* Adjust padding to make the button smaller */
-   font-size: 1.2rem; /* Adjust font size to make the text smaller */
-   width: auto; /* Ensure the button width adjusts to content */
+   margin-top: auto;
+   padding: 0.5rem 1rem;
+   font-size: 1.2rem;
+   width: auto;
  }
+ 
+ /* Media Queries for Mobile Devices */
+ @media (max-width: 768px) {
+   .publications-container .publications-box {
+     flex-direction: column;
+     align-items: flex-start;
+     padding: 1rem;
+   }
+   .publications-box .publication-image {
+     width: 100%;
+     margin-right: 0;
+     margin-bottom: 1rem;
+   }
+   .publications-box h3 {
+     font-size: 1.8rem;
+   }
+   .publications-box .date {
+     font-size: 1.2rem;
+   }
+   .publications-box p {
+     font-size: 1.4rem;
+   }
+   .publications-box .btn {
+     font-size: 1rem;
+   }
+ }
+ 
 
  .contact {
    background: var(--second-bg-color);
