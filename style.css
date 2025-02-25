@@ -440,7 +440,7 @@
    border: 0.2rem solid var(--bg-color);
  }
 
- .education {
+.education {
    background: var(--second-bg-color);
  }
  .education h2 {
@@ -461,7 +461,7 @@
    box-shadow: 0 0 1rem var(--bg-color);
    border: .2rem solid var(--bg-color);
    transition: .5s ease;
-   width: 100%; /* Reduce the width of the boxes */
+   width: 100%;
    max-width: 800px; /* Set a maximum width */
  }
  .education-container .education-box:hover {
@@ -493,6 +493,30 @@
    font-size: 1.4rem;
    color: var(--main-color);
    margin-bottom: 1rem; /* Add space below the date */
+ }
+ 
+ /* Media Queries for Mobile Devices */
+ @media (max-width: 768px) {
+   .education-container .education-box {
+     flex-direction: column;
+     align-items: flex-start;
+     padding: 1rem;
+   }
+   .education-box .education-image {
+     width: 100%;
+     margin-right: 0;
+     margin-bottom: 1rem;
+   }
+   .education-box h3 {
+     font-size: 1.8rem;
+   }
+   .education-box .college,
+   .education-box .branch {
+     font-size: 1.4rem;
+   }
+   .education-box .date {
+     font-size: 1.2rem;
+   }
  }
 
  .portfolio {
